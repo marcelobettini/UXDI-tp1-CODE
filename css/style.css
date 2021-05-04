@@ -18,14 +18,29 @@ footer > p {
     align-self: center;
 
 }
+
+iframe {    
+    width: 352px;
+    height: 198px;
+    }      
+
 @media screen and (min-width: 768px) {
+    iframe {
+        width: 368px;
+        height: 207px;
+        }   
     .columns {
         column-count: 2;
         column-gap: 2rem;
         column-rule-style: solid;
-    }   
+    }    
+        
 }
-@media screen and (min-width: 1198px) {
+@media screen and (min-width: 1198px) {    
+    iframe {
+        width: 560px;
+        height: 315px;
+        }   
     .columns {
         column-count: 3;
     }   
