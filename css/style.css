@@ -22,7 +22,11 @@ footer > p {
 iframe {    
     width: 352px;
     height: 198px;
-    }      
+} 
+.section {   	
+	margin: 0;
+	scroll-margin-top: 2.5em;
+}
 
 @media screen and (min-width: 768px) {
     iframe {
