@@ -8,18 +8,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
     <title>UXDI-TP1-CODE</title>
 </head>
 
 <body>
-    <header>
-        encabezado
+    <header class="sticky-top">        
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">    
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/uxdi_logo_web-2.png" width="300px"
+                        alt="Logotipo Diplomatura UXDI"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <span class="navbar-nav dropstart ms-auto mb-2 mb-lg-0">
+                        <span class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Los Objetos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#art_1">Smartphone</a></li>
+                                <li><a class="dropdown-item" href="#art_2">Pava & Cafetera francesa</a></li>
+                                <li><a class="dropdown-item" href="#art_3">Máquina de afeitar</a></li>
+                                <li><a class="dropdown-item" href="#art_4">Fotocopiadora</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#art_5">Portero visor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#video">Video-Safari</a></li>
+                            </ul>
+                        </span>
+                    </span>
+                </div>
+            </div>        
+        </nav>
     </header>
     <article class="container">
         <section>
             <div class="row">
                 <div class="col-md-7">
-                    <h3 class="display-5">Smartphone</h3>
+                    <h3 id="art_1" class="display-5">Smartphone</h3>
                     <p>Dispositivo de telecomunicaciones que, por su capacidad de acceso a Internet, servicios de
                         mensajería, captación de fotos y videos y la posibilidad de conectarse con otros aparatos, se
                         convierte en rector de la vida cotidiana y se usa para productividad y entretenimiento.
@@ -57,7 +95,8 @@
                 <div class="col-md-4 align-self-center">
                     <img src="./assets/telefono.jpg" class="img-fluid" title="Smartphone Samsung Note 10 Plus"
                         alt="Smartphone Samsung Note 10 Plus">
-                    <figcaption>Smartphones: La potencia de un PC en el bolsillo</figcaption>
+                    <figcaption class="figure-caption text-center bg-dark text-white">Smartphones: La potencia de un PC
+                        en el bolsillo</figcaption>
                 </div>
             </div>
         </section>
@@ -67,7 +106,7 @@
         <section>
             <div class="row">
                 <div class="col-12 my-5">
-                    <h3 class="display-5 text-center">Pava eléctrica & Cafetera francesa</h3>
+                    <h3 id="art_2" class="display-5 text-center">Pava eléctrica & Cafetera francesa</h3>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 align-self-center">
@@ -128,8 +167,8 @@
         <hr>
         <section>
             <div class="row">
-                <div class="col-lg-12 offset-lg-6 my-5">
-                    <h3 class="display-5">Máquina de afeitar</h3>
+                <div class="col-lg-6 offset-lg-6 my-5">
+                    <h3 id="art_3" class="display-5">Máquina de afeitar</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-5">
@@ -145,7 +184,8 @@
                         <p> Para la RAE máquina es: <cite>“Artificio para aprovechar, dirigir o regular la acción de una
                                 fuerza. Conjunto de aparatos combinados para recibir cierta forma de energía y
                                 transformarla
-                                en otra más adecuada, o para producir un efecto determinado”.</cite> <a href="#1">1</a>
+                                en otra más adecuada, o para producir un efecto determinado”.</cite> <a id="1_back"
+                                href="#1">1</a>
                         </p>
                         <p>De hecho, hay una entrada en la misma página para el vocablo “maquinilla”, que alude a un
                             tipo específico de máquina. En Argentina se le llama también “maquinita de afeitar” o, por
@@ -166,7 +206,7 @@
         <section>
             <div class="row">
                 <div class="col-12 my-5">
-                    <h3 class="display-5">Fotocopiadora</h3>
+                    <h3 id="art_4" class="display-5">Fotocopiadora</h3>
                 </div>
                 <div class="columns">
                     <p>Llamadas de modo genérico fotocopiadoras, estos centros de copiado han evolucionado a punto tal
@@ -193,7 +233,9 @@
                         documento desde una PC conectada a la red de la organización.</p>
                     <img src="./assets/ricoh.jpg" class="img-fluid" alt="Fotocopiadora Ricoh MP 501"
                         title="Fotocopiadora Ricoh MP 501">
-                    <figcaption class="text-center bg-dark text-white">La copiadora Ricoh MP 501 es un completo centro de gestión de documentos</figcaption>
+                    <figcaption class="figure-caption text-center bg-dark text-white">La copiadora Ricoh MP 501 es un
+                        completo centro
+                        de gestión de documentos</figcaption>
                 </div>
 
             </div>
@@ -202,11 +244,11 @@
         <hr>
         <section>
             <div class="col my-5">
-                <h2 class="display-3 mt-5">CASO DE ESTUDIO</h2>
+                <h2 id="art_5" class="display-3 mt-5 text-center bg-dark text-white p-3 rounded-2">CASO DE ESTUDIO</h2>
             </div>
-            <div class="row border-bottom my-4">
+            <div class="row border-top border-bottom py-3">
                 <div class="col-md-8">
-                    <h3 class="display-4">Portero visor</h3>
+                    <h3 class="display-4 my-5">Portero visor</h3>
                     <p>Dispositivo electrónico para apertura remota de puertas. Para este trabajo analizamos el modelo
                         de la marca HIKVISION, una de las más populares del mercado. Consta de varias partes bien
                         definidas:</p>
@@ -227,8 +269,8 @@
                         alt="Mano pulsando timbre de portero visor" title="Mano pulsando timbre de portero visor">
                 </div>
             </div>
-            
-            <div class="columns">
+
+            <div class="columns mt-4">
                 <p>Los primeros dispositivos de apertura remota de puertas estaban vinculados fuertemente a los
                     edificios multifamiliares construidos en altura.
                     Conocidos en la cultura popular como portero
@@ -241,7 +283,7 @@
                     operación manual. La posibilidad de hacerlo de forma remota aumenta la satisfacción y eficiencia en
                     la mayoría de los casos.</p>
                 <p>Si convenimos que un producto ergonómico <cite>“reduce el esfuerzo de quien lo usa”</cite> <a
-                        href="#2">2</a> este
+                        id="2_back" href="#2">2</a> este
                     aparato ciertamente da en el blanco y mejora la UX, particularmente desde el punto de vista de quien
                     opera la apertura de la puerta. Aunque la perfección no exista, el portero visor se encuentra cerca
                     si tomamos en cuenta para qué fue creado y cómo se aproxima a ese objetivo. Bien podríamos ubicarlo
@@ -261,9 +303,14 @@
                     de los aparatos y vincularla con <cite>"la necesidad de adecuar los productos, sistemas y entornos a
                         las
                         características de las personas para que puedan desarrollar sus actividades con eficacia,
-                        seguridad y bienestar"</cite> <a href="#3">3</a>,
+                        seguridad y bienestar"</cite> <a id="3_back" href="#3">3</a>,
                     entenderemos que se debe tomar en cuenta el contexto y no apenas el dispositivo. </p>
-
+                <div class="py-4 my-4">
+                    <img src="./assets/portero_visor.webp" class="img-fluid" alt="Portero visor marca Hikvision"
+                        title="Portero visor marca Hikvision">
+                    <figcaption class="figure-caption text-center bg-dark text-white">Portero visor marca HIKVISION
+                    </figcaption>
+                </div>
                 <p>Ahora podremos ver al portero visor como parte de un sistema que tiene por finalidad la atención de
                     personas que concurren a un edificio gubernamental.</p>
                 <p>Y descubrimos así que la accesibilidad es el primer escollo en la UX
@@ -277,14 +324,14 @@
                     entra en tensión con lo prescrito por la norma del diseño universal: <cite>“diseñar productos y
                         entornos que puedan ser utilizados por todas las personas, en la mayor medida posible, sin la
                         necesidad de
-                        adaptación ni diseño especializado”</cite> <a href="#4">4</a></p>
+                        adaptación ni diseño especializado”</cite> <a id="4_back" href="#4">4</a></p>
                 <p>Como se ve en el caso de estudio, las personas con problemas de movilidad
                     directamente no llegarán a usar el dispositivo. El aparato puede ser accesible (dependiendo de la
                     altura a la que se instale el pulsador) pero pierde esa capacidad al ser parte de un subconjunto de
                     sistemas orbitando alrededor de un edificio que impide la llegada de personas con discapacidad
                     motora.</p>
 
-                <h4 class="mt-5">¿Qué pasa que no pasas?</h4>
+                <h4 class="mt-5">¿Qué te pasa que no pasas?</h4>
                 <p>
                     Con cierta frecuencia –puedo decir que se trata de una frecuencia pues ha ocurrido las suficientes
                     veces para notar un patrón- quien opera el portero visor protesta pues quien ha tocado el timbre no
@@ -307,27 +354,29 @@
                 <p>Otro problema resulta de la configuración de los distintos sistemas. En el que presentamos aquí el
                     zumbido no es tal sino apenas un “click”.
                     Del lado del usuario que toca a la puerta este encadenamiento de circunstancias puede provocar un
-                    problema de uso definido como <cite>"brecha de evaluación"</cite>.<a href="#5">5</a>
+                    problema de uso definido como <cite>"brecha de evaluación"</cite>.<a id="5_back" href="#5">5</a>
                 <p>Esta se produce cuando no sabemos interpretar la respuesta dada por el dispositivo o esta no es la
                     esperada. En el caso analizado, la respuesta esperada es la apertura de la puerta.</p>
                 <p>Una solución posible requiere que quien atiende se comprometa en la tarea. La mayoría de
                     las veces solamente se presiona el botón de apertura. Minimizar los problemas de UX requeriría
                     hablarle a la persona que toca timbre y darle instrucciones precisas.</p>
-                <div class="py-4 my-4">
-                    <img src="./assets/doble-bobina.jpg" class="img-fluid"
-                        alt="Corte transversal de una cerradura electromagnética"
-                        title="Corte transversal de una cerradura electromagnética">
-                    <figcaption class="text-center bg-dark text-white">Corte transversal de una cerradura
-                        electromagnética</figcaption>
-                </div>
+
                 <p> Por otra parte, la operación no es intuitiva. Uno podría pensar que un aparato que cumple una tarea
                     simple, rutinaria y monótona como abrir una puerta sería fácil de operar pero no es sino hasta
                     usarlo varias veces, cometiendo errores, cuando se descubre el funcionamiento.</p>
                 Un inconveniente es que las teclas tienen pictogramas en vez de verbos de significado evidente tales
                 como "abrir", "mirar" o "hablar". Esto puede
-                producir <cite>brechas de ejecución</cite> <a href="#6">6</a>. En otras palabras, no sabemos alcanzar el
+                producir <cite>brechas de ejecución</cite> <a id="6_back" href="#6">6</a>. En otras palabras, no sabemos
+                alcanzar el
                 objetivo deseado con
                 las opciones que nos presenta el sistema.</p>
+                <div class="py-4 my-4">
+                    <img src="./assets/doble-bobina.jpg" class="img-fluid"
+                        alt="Corte transversal de una cerradura electromagnética"
+                        title="Corte transversal de una cerradura electromagnética">
+                    <figcaption class="figure-caption text-center bg-dark text-white">Corte transversal de una cerradura
+                        electromagnética</figcaption>
+                </div>
                 <p>Ok, el botón con la figura del auricular de un teléfono es para hablarle a quien está en el otro
                     extremo. ¿Estamos de acuerdo en eso? La respuesta es "No". Hay varias
                     generaciones que no han visto jamás un auricular de teléfono tal y como los reconocemos quienes
@@ -338,61 +387,99 @@
                 <p> Este y otros defectos pueden solucionarse con mayor cantidad de iteraciones en el ciclo
                     prueba/ajuste. Quizá
                     hayan pensando: “Ey, es apenas un portero. Pongamos cuatro botones y pasemos a lo siguiente”. Lo
-                    deseable sería recordar que al evaluar un producto digital, <cite>“algunas características solo aparecen
-                    con el uso”</cite>. <a href="#7">7</a></p>
+                    deseable sería recordar que al evaluar un producto digital, <cite>“algunas características solo
+                        aparecen
+                        con el uso”</cite>. <a id="7_back" href="#7">7</a></p>
                 <p>Luego viene el botón de algo que parece una cámara. Por un momento podríamos
-                allanarnos a la coincidencia y suponer que todos lo interpretamos. Entonces, en el nombre de San
-                Pedro, magno portero de las verjas celestiales, ¿por qué cuando se presiona ese botón no sucede nada
-                y se debe presionar otro, que consiste en una flecha “que se muerde la cola”, como el símbolo de
-                “repetir”, para que efectivamente se muestre la imagen? Quizá lo comprenderíamos si hubiésemos leído
-                el manual pero, como desliza Norman en su clásico texto de referencia: <cite>“Por desgracia, es imposible
-                fiarse ni siquiera de los mejores manuales; muchos usuarios ni los leen. Evidentemente, es un error
-                esperar que se puedan manejar dispositivos complejos sin instrucciones de algún tipo, pero los
-                diseñadores de dispositivos complejos tienen que tratar con la naturaleza humana tal cual es”</cite>. <a href="#8">8</a></p>
+                    allanarnos a la coincidencia y suponer que todos lo interpretamos. Entonces, en el nombre de San
+                    Pedro, magno portero de las verjas celestiales, ¿por qué cuando se presiona ese botón no sucede nada
+                    y se debe presionar otro, que consiste en una flecha “que se muerde la cola”, como el símbolo de
+                    “repetir”, para que efectivamente se muestre la imagen? Quizá lo comprenderíamos si hubiésemos leído
+                    el manual pero, como desliza Norman en su clásico texto de referencia: <cite>“Por desgracia, es
+                        imposible
+                        fiarse ni siquiera de los mejores manuales; muchos usuarios ni los leen. Evidentemente, es un
+                        error
+                        esperar que se puedan manejar dispositivos complejos sin instrucciones de algún tipo, pero los
+                        diseñadores de dispositivos complejos tienen que tratar con la naturaleza humana tal cual
+                        es”</cite>. <a id="8_back" href="#8">8</a></p>
 
                 <p>Volvamos a lo difuso de ciertas convenciones culturales. Vale decir que alguien de 20 años
-                tal vez no identifique la cámara del botón como una cámara del mundo material, ergo, de "su" mundo. Al fin y al
-                cabo, es probable que la única que haya visto en su vida sea la de su teléfono móvil, cuya forma no
-                se le parece en nada.</p>
+                    tal vez no identifique la cámara del botón como una cámara del mundo material, ergo, de "su" mundo.
+                    Al fin y al
+                    cabo, es probable que la única que haya visto en su vida sea la de su teléfono móvil, cuya forma no
+                    se le parece en nada.</p>
                 <p>Llegado el punto en que confluyen las brechas de ejecución y de evaluación –un
-                operador que no conoce el aparato y una persona que toca el timbre y no oye el “click” de apertura-
-                se produce la tormenta perfecta. Como las personas tomamos decisiones según dos modos genéricos de
-                funciones cognitivas (<cite>por razonamiento o por intuición</cite> <a href="#9">9</a> y el acto de tocar a una puerta entra en la
-                segunda categoría) no es infrecuente que la persona empuje la puerta antes o después de la apertura
-                y tampoco que el operador presione todas las teclas con la esperanza de que alguna finalmente abra
-                la condenada puerta.</p>
+                    operador que no conoce el aparato y una persona que toca el timbre y no oye el “click” de apertura-
+                    se produce la tormenta perfecta. Como las personas tomamos decisiones según dos modos genéricos de
+                    funciones cognitivas (<cite>por razonamiento o por intuición</cite> <a id="9_back" href="#9">9</a> y
+                    el acto de
+                    tocar a una puerta entra en la
+                    segunda categoría) no es infrecuente que la persona empuje la puerta antes o después de la apertura
+                    y tampoco que el operador presione todas las teclas con la esperanza de que alguna finalmente abra
+                    la condenada puerta.</p>
                 <p>En esos casos la respuesta al problema puede llegar a través de la niebla del
-                pasado, del que siempre se pueden recuperar prácticas antiguas pero muy efectivas.</p>
-                
+                    pasado, del que siempre se pueden recuperar prácticas antiguas pero muy efectivas.</p>
+
                 <p><em>“Tocaron timbre, vayamos a abrir la puerta".</em></p>
             </div>
-
         </section>
+        <div class="spacer"></div>
+        <section>
+            <div class="row mt-5 border py-5">
+                <div class="col-md-5 offset-md-1">
+                    <h3 id="video" class="display-4 bg-dark text-white rounded-2 p-2">Video-Safari</h3>
+                    <p>Te invito a un safari de imágenes donde podrás ver los cinco dispositivos mencionados. Todas las
+                        imágenes fueron captadas específicamente para este estudio y no se utilizó
+                        material fílmico de
+                        archivo</p>
+                    <p>El audio del clip está compuesto por sonido ambiente en
+                        situaciones de uso de los objetos en el contexto y momento de la
+                        grabación. También se oyen un fragmento de la entrevista a Guillermo Cóppola emitida por Radio
+                        Rivadavia y la canción de Bruce Springsteen <cite>I'm on fire</cite>, cuyo uso fue autorizado
+                        por el licenciatario.</p>
 
+                </div>
+                <div class="col-md-5">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item rounded-2" width="560" height="315"
+                            src="https://www.youtube.com/embed/kH8xWrvei58" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+        </section>
         <div class="spacer"></div>
         <hr>
         <section>
             <div class="row">
                 <div class="col-12 my-5">
                     <h5 class="display-7">Bibliografía</h5>
-                    <p id="1">1. Diccionario de la Real Academia Española. Vigésima segunda edición.</p>
-                    <p id="2">2. Victoria Díaz - INTI. Diseño Industrial. Clase del 22 de abril de 2021. Diplomatura
+                    <p id="1"><a href="#1_back">1.</a> Diccionario de la Real Academia Española. Vigésima segunda
+                        edición.</p>
+                    <p id="2"><a href="#2_back">2.</a> Victoria Díaz - INTI. Diseño Industrial. Clase del 22 de abril de
+                        2021. Diplomatura
                         UX/DI.</p>
-                    <p id="3">3. Victoria Díaz. Op Cit.</p>
-                    <p id="4">4. Victoria Díaz. Op Cit.</p>
-                    <p id="5">5. Yussef Hassan Montero. Introducción a la interacción persona computadora. Pioneros y
+                    <p id="3"><a href="#3_back">3.</a> Victoria Díaz. Op Cit.</p>
+                    <p id="4"><a href="#4_back">4.</a> Victoria Díaz. Op Cit.</p>
+                    <p id="5"><a href="#5_back">5.</a> Yussef Hassan Montero. Introducción a la interacción persona
+                        computadora. Pioneros y
                         Hacedores.</p>
-                    <p id="6">6. Yussef Hassan Montero. Op Cit.</p>
-                    <p id="7">7. Jonas Löwgren. Diseño de interacción, prácticas de investigación y diseño de materiales digitales. Pioneros y Hacedores.</p>
-                    <p id="8">8. Donald Norman. La psicología de los objetos cotidianos. </p>
-                    <p id="9">9. Yussef Hassan Montero. Op Cit.</p>
+                    <p id="6"><a href="#6_back">6.</a> Yussef Hassan Montero. Op Cit.</p>
+                    <p id="7"><a href="#7_back">7.</a> Jonas Löwgren. Diseño de interacción, prácticas de investigación
+                        y diseño de materiales
+                        digitales. Pioneros y Hacedores.</p>
+                    <p id="8"><a href="#8_back">8.</a> Donald Norman. La psicología de los objetos cotidianos. </p>
+                    <p id="9"><a href="#9_back">9.</a> Yussef Hassan Montero. Op Cit.</p>
                 </div>
             </div>
 
         </section>
     </article>
+    <div class="spacer"></div>
 
-
+<footer>
+    <p>Marcelo Eduardo Bettini - 2021</p>
+</footer>
 </body>
 
 </html>
