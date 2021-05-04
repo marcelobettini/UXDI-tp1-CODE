@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box; 
+}
+.spacer {
+    height: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .columns {
+        column-count: 2;
+        column-gap: 2rem;
+        column-rule-style: solid;
+    }   
+}
+@media screen and (min-width: 1198px) {
+    .columns {
+        column-count: 3;
+    }   
+}
+
