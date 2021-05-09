@@ -74,6 +74,16 @@ iframe {
   0% {opacity:0;}
   100% {opacity:1;}
 }
+.custom-marker > ::marker {  
+  content: '\f35a';
+  color:cadetblue;  
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 700;  
+  padding-left: 20px;
+}
+.custom-marker > li {
+  padding-left: .5em;
+}
 @media screen and (min-width: 768px) {
     iframe {
         width: 368px;
