@@ -3,6 +3,11 @@
     padding: 0;   
     box-sizing: border-box; 
 }
+.heading-ttl {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;  
+}
 .spacer {
     height: 5rem;
 }
@@ -28,6 +33,10 @@ iframe {
 .section-big {   	
 	margin: 0;
 	scroll-margin-top: 5.5em;
+}
+.section-heading {
+  margin: 0;
+  scroll-margin-top: 8.5em;
 }
 .fade-in-ttl{
   animation: fadeIn 2s;
